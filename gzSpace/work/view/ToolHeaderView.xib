@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ToolHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="395" height="104"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="444" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51j-8t-yPD">
+                    <rect key="frame" x="10" y="38" width="86.5" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="aqv-w0-Ak4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="写文章" image="zhizuo">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="chuangzuoAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="HGb-nV-a05"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="445" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axC-FG-pKm">
+                    <rect key="frame" x="106.5" y="38" width="86" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="Juv-SA-F9u"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="草稿箱" image="tongji">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="chuangzuoAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="QcI-5E-c04"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="446" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPa-hc-5Xe">
+                    <rect key="frame" x="202.5" y="38" width="86.5" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="ilK-Mb-pWB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="文件库" image="wenjianku">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="chuangzuoAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="MMh-K0-aqk"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="447" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="svV-2a-x75">
+                    <rect key="frame" x="299" y="38" width="86" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="2u5-qL-4fM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="工具下载" image="xiazai">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="chuangzuoAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Oae-Op-11I"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="svV-2a-x75" secondAttribute="bottom" constant="6" id="4av-of-BKa"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="jPa-hc-5Xe" secondAttribute="bottom" constant="6" id="6E4-Qv-jUk"/>
+                <constraint firstItem="axC-FG-pKm" firstAttribute="width" secondItem="51j-8t-yPD" secondAttribute="width" id="BgF-iP-J5o"/>
+                <constraint firstItem="jPa-hc-5Xe" firstAttribute="width" secondItem="51j-8t-yPD" secondAttribute="width" id="Jdo-za-92U"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="svV-2a-x75" secondAttribute="trailing" constant="10" id="KWD-LU-CEl"/>
+                <constraint firstItem="svV-2a-x75" firstAttribute="leading" secondItem="jPa-hc-5Xe" secondAttribute="trailing" constant="10" id="TMf-h1-T4R"/>
+                <constraint firstItem="axC-FG-pKm" firstAttribute="leading" secondItem="51j-8t-yPD" secondAttribute="trailing" constant="10" id="X74-9S-qHL"/>
+                <constraint firstItem="51j-8t-yPD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="bFH-7i-J5q"/>
+                <constraint firstItem="svV-2a-x75" firstAttribute="width" secondItem="51j-8t-yPD" secondAttribute="width" id="dXK-Ar-tTM"/>
+                <constraint firstItem="jPa-hc-5Xe" firstAttribute="leading" secondItem="axC-FG-pKm" secondAttribute="trailing" constant="10" id="qVb-4F-VD1"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="axC-FG-pKm" secondAttribute="bottom" constant="6" id="uwE-EB-jk9"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="51j-8t-yPD" secondAttribute="bottom" constant="6" id="zPQ-Fa-Sqk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="chuangzuo" destination="51j-8t-yPD" id="wa0-h4-ExX"/>
+                <outlet property="jiance" destination="jPa-hc-5Xe" id="6ps-E0-muc"/>
+                <outlet property="tongji" destination="axC-FG-pKm" id="IWa-Q7-1gu"/>
+                <outlet property="xiazai" destination="svV-2a-x75" id="Wde-Oo-IZh"/>
+            </connections>
+            <point key="canvasLocation" x="-881.5" y="-89"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="tongji" width="24" height="24"/>
+        <image name="wenjianku" width="24" height="24"/>
+        <image name="xiazai" width="24" height="24"/>
+        <image name="zhizuo" width="24" height="21"/>
+    </resources>
+</document>

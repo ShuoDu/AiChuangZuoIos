@@ -1,0 +1,83 @@
+//
+//  gzSpacePch.pch
+//  gzSpace
+//
+//  Created by 智享单车 on 2018/1/17.
+//  Copyright © 2018年 智享单车. All rights reserved.
+//
+
+#ifndef gzSpacePch_pch
+#define gzSpacePch_pch
+//常用全局常量
+#define WIDTH [[UIScreen mainScreen] bounds].size.width
+#define HEIGHT [[UIScreen mainScreen] bounds].size.height
+#define BOUND [[UIScreen mainScreen] bounds]
+#define OldNavColor [UIColor colorWithRed:213/255.0 green:25/255.0 blue:16/255.0 alpha:1];;
+#define MainNavColor [UIColor colorWithRed:255/255.0 green:100/255.0 blue:59/255.0 alpha:1]
+#define MainHexColor #FF643B
+#define H1TextColor [UIColor colorWithRed:255/255.0 green:100/255.0 blue:59/255.0 alpha:1]
+#define H2TextColor [UIColor colorWithRed:255/255.0 green:100/255.0 blue:59/255.0 alpha:1]
+#define ViewBackColor [UIColor colorWithRed:235/255.0 green:240/255.0 blue:240/255.0 alpha:1.0]
+#define NewViewBack [UIColor colorWithRed:245/255.0 green:245/255.0 blue:245/255.0 alpha:1.0]
+#define YzColor [UIColor colorWithRed:19/255.0 green:174/255.0 blue:103/255.0 alpha:1.0]
+
+
+/****** 第三方库 ******/
+//#import <Masonry.h>
+
+/****** 宏 ******/
+//宽高
+#define Screen_Width       [UIScreen mainScreen].bounds.size.width
+#define Screen_Height      [UIScreen mainScreen].bounds.size.height
+//字体
+#define H22                [UIFont systemFontOfSize:22]
+#define H20                [UIFont systemFontOfSize:20]
+#define H18                [UIFont systemFontOfSize:18]
+#define H16                [UIFont systemFontOfSize:16]
+#define H15                [UIFont systemFontOfSize:15]
+#define H14                [UIFont systemFontOfSize:14]
+#define H13                [UIFont systemFontOfSize:13]
+#define H12                [UIFont systemFontOfSize:12]
+#define H11                [UIFont systemFontOfSize:11]
+#define H10                [UIFont systemFontOfSize:10]
+//颜色
+#define Color_RGB(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0  alpha:1.0]
+
+#define Color_BG           Color_RGB(245, 245, 245)
+#define Color_Line         Color_RGB(240, 240, 240)
+#define Color_H1           Color_RGB(77, 77, 77)
+#define Color_Random       [UIColor colorWithRed:arc4random()%256/255.0 green:arc4random()%256/255.0 blue:arc4random()%256/255.0 alpha:1.0]
+
+#define Color_White        [UIColor whiteColor]
+#define Color_Gray         [UIColor grayColor]
+#define Color_LightGray    [UIColor lightGrayColor]
+#define Color_Black        [UIColor blackColor]
+#define Color_Red          [UIColor redColor]
+#define Color_Clear        [UIColor clearColor]
+#define Color_Green        [UIColor greenColor]
+#define Color_Blue         [UIColor blueColor]
+#define Color_Orange       [UIColor orangeColor]
+#define Color_Yellow       [UIColor yellowColor]
+
+#define Host @"http://192.168.200.123:8080/"
+#define ImgHost @"http://192.168.200.123:8080/"
+
+//日志控制
+#ifdef DEBUG
+#define DLog(...) printf("[%s] %s [第%d行]: %s\n", __TIME__ ,__PRETTY_FUNCTION__ ,__LINE__, [[NSString stringWithFormat:__VA_ARGS__] UTF8String])
+#else
+#define DLog(...)
+
+#endif
+
+//引入头
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <SVProgressHUD.h>
+#import "CYXHttpRequest.h"
+#import "UIView+YYAdd.h"
+#import "YYModel.h"
+#import <UIImageView+WebCache.h>
+//#import "UIColor+YYAdd.h"
+
+#endif /* gzSpacePch_pch */

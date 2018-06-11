@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="StoreCell">
+            <rect key="frame" x="0.0" y="0.0" width="145" height="174"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="145" height="174"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ajianji" translatesAutoresizingMaskIntoConstraints="NO" id="EkZ-OJ-J8P">
+                        <rect key="frame" x="22.5" y="11" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="2Pg-m9-hVu"/>
+                            <constraint firstAttribute="height" constant="100" id="X0g-5V-gbm"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="爱剪辑（视频剪辑）" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19g-Cg-wog">
+                        <rect key="frame" x="13" y="121" width="119.5" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="6cL-F8-X1b"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 保存到云盘" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSe-j7-gdC">
+                        <rect key="frame" x="40" y="147" width="65" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="tih-tQ-gGw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="EkZ-OJ-J8P" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Fbc-Eo-tSO"/>
+                <constraint firstItem="19g-Cg-wog" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="MDA-HJ-aVd"/>
+                <constraint firstItem="jSe-j7-gdC" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="NfB-aM-DrM"/>
+                <constraint firstItem="19g-Cg-wog" firstAttribute="top" secondItem="EkZ-OJ-J8P" secondAttribute="bottom" constant="10" id="Q7m-P1-0GJ"/>
+                <constraint firstItem="jSe-j7-gdC" firstAttribute="top" secondItem="19g-Cg-wog" secondAttribute="bottom" constant="5" id="qLq-fB-mwf"/>
+                <constraint firstItem="EkZ-OJ-J8P" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="11" id="yxF-az-ETa"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="145" height="174"/>
+            <point key="canvasLocation" x="-266.5" y="-11"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ajianji" width="256" height="256"/>
+    </resources>
+</document>
